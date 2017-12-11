@@ -1,6 +1,6 @@
 {
   "name": "posthtml-cache",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A posthtml plugin for add nanoid to style & script links",
   "license": "MIT",
   "repository": "gitscrum/posthtml-cache",
