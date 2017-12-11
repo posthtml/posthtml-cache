@@ -73,7 +73,7 @@
   },
   "lint-staged": {
     "*.{js,html}": "eslint",
-    "./*.md": "eslint --rule indent: [error, 4] ."
+    "*.md": "eslint --rule indent: [error, 4] ."
   },
   "ava": {
     "require": [
@@ -114,7 +114,17 @@
       "xo",
       "plugin:unicorn/recommended",
       "plugin:ava/recommended"
-    ]
+    ],
+    "rules": {
+      "indent": [
+        2,
+        4,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "capitalized-comments": "off"
+    }
   },
   "clinton": {
     "ignores": [
