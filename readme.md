@@ -2,7 +2,7 @@
 
 > A posthtml plugin for add nanoid to style & script links and you tags...
 
-[![Travis Build Status](https://img.shields.io/travis/GitScrum/posthtml-cache/master.svg?style=flat-square&label=unix)](https://travis-ci.org/GitScrum/posthtml-cache)[![node](https://img.shields.io/node/v/post-sequence.svg?maxAge=2592000&style=flat-square)]()[![npm version](https://img.shields.io/npm/v/posthtml-cache.svg?style=flat-square)](https://www.npmjs.com/package/posthtml-cache)[![Dependency Status](https://david-dm.org/gitscrum/posthtml-cache.svg?style=flat-square)](https://david-dm.org/gitscrum/posthtml-cache)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)[![Coveralls status](https://img.shields.io/coveralls/GitScrum/posthtml-cache.svg?style=flat-square)](https://coveralls.io/r/GitScrum/posthtml-cache)
+[![Travis Build Status](https://img.shields.io/travis/GitScrum/posthtml-cache.svg?style=flat-square&label=unix)](https://travis-ci.org/GitScrum/posthtml-cache)[![node](https://img.shields.io/node/v/post-sequence.svg?maxAge=2592000&style=flat-square)]()[![npm version](https://img.shields.io/npm/v/posthtml-cache.svg?style=flat-square)](https://www.npmjs.com/package/posthtml-cache)[![Dependency Status](https://david-dm.org/gitscrum/posthtml-cache.svg?style=flat-square)](https://david-dm.org/gitscrum/posthtml-cache)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)[![Coveralls status](https://img.shields.io/coveralls/GitScrum/posthtml-cache.svg?style=flat-square)](https://coveralls.io/r/GitScrum/posthtml-cache)
 
 ## Why?
 
