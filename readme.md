@@ -17,6 +17,7 @@ npm i -S posthtml posthtml-cache
 ## Usage
 
 ```js
+import {readFileSync, writeFileSync} from 'fs';
 import posthtml from 'posthtml';
 import posthtmlCache from 'posthtml-cache';
 
