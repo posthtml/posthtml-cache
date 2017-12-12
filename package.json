@@ -49,6 +49,7 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.2",
     "babel-plugin-add-module-exports": "^0.2.0",
+    "babel-plugin-array-includes": "^2.0.3",
     "babel-preset-env": "^1.4.0",
     "babel-preset-minify": "^0.2.0",
     "babel-register": "^6.24.1",
@@ -99,6 +100,7 @@
       ]
     ],
     "plugins": [
+      "array-includes",
       "add-module-exports"
     ]
   },
