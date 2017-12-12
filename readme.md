@@ -42,6 +42,7 @@ input.html
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <img data-src="logo.svg" alt="">
     <script src="script.js"></script>
   </body>
 <html>
@@ -55,6 +56,7 @@ output.html
     <link rel="stylesheet" href="style.css?v=4f90d13a42">
   </head>
   <body>
+    <img data-src="logo.svg?v=VlLqCweTvn_E1g3XXGMtM" alt="">
     <script src="script.js?v=93ce_Ltuub"></script>
   </body>
 <html>
@@ -67,3 +69,8 @@ output.html
 Type: `Array`  
 Default: `['script', 'link']`
 Description: *You can also expand the list by adding the tags you need...*  
+
+### `attributes`
+Type: `Array`  
+Default: `['src', 'href']`
+Description: *You can also expand the list by adding the attributes you need...*  
