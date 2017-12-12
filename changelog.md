@@ -1,3 +1,19 @@
+<a name="0.1.0"></a>
+# 0.1.0 (2017-12-12)
+
+* 0.1.0 ([d24c00c](https://github.com/gitscrum/posthtml-cache/commit/d24c00c))
+* Update readme.md ([a69aaec](https://github.com/gitscrum/posthtml-cache/commit/a69aaec))
+* build: add array includes ([25795be](https://github.com/gitscrum/posthtml-cache/commit/25795be))
+* build: update change log ([67288c1](https://github.com/gitscrum/posthtml-cache/commit/67288c1))
+* feat: add support custom and extend attributes, close #3 ([7cf62e3](https://github.com/gitscrum/posthtml-cache/commit/7cf62e3)), closes [#3](https://github.com/gitscrum/posthtml-cache/issues/3)
+* test: for issue #3 ([de47996](https://github.com/gitscrum/posthtml-cache/commit/de47996)), closes [#3](https://github.com/gitscrum/posthtml-cache/issues/3)
+* test: use options ([b6f095f](https://github.com/gitscrum/posthtml-cache/commit/b6f095f))
+* docs: add description for issue #3 ([21e7db5](https://github.com/gitscrum/posthtml-cache/commit/21e7db5)), closes [#3](https://github.com/gitscrum/posthtml-cache/issues/3)
+* fix: lint for md ([d8e18ef](https://github.com/gitscrum/posthtml-cache/commit/d8e18ef))
+* fix: lost is-promise ([3d3a4d2](https://github.com/gitscrum/posthtml-cache/commit/3d3a4d2))
+
+
+
 <a name="0.0.1"></a>
 ## 0.0.1 (2017-12-11)
 
