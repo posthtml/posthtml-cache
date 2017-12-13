@@ -1,3 +1,17 @@
+<a name="0.1.1"></a>
+## 0.1.1 (2017-12-13)
+
+* 0.1.1 ([149aea2](https://github.com/gitscrum/posthtml-cache/commit/149aea2))
+* Update license ([7cc7618](https://github.com/gitscrum/posthtml-cache/commit/7cc7618))
+* Update license ([6d7272a](https://github.com/gitscrum/posthtml-cache/commit/6d7272a))
+* Update readme.md ([f33b6fa](https://github.com/gitscrum/posthtml-cache/commit/f33b6fa))
+* fix: not inhiret attributes, close #5 ([8a2c353](https://github.com/gitscrum/posthtml-cache/commit/8a2c353)), closes [#5](https://github.com/gitscrum/posthtml-cache/issues/5)
+* test: remove log ([8c5560e](https://github.com/gitscrum/posthtml-cache/commit/8c5560e))
+* test: update for issue #5 ([da8301c](https://github.com/gitscrum/posthtml-cache/commit/da8301c)), closes [#5](https://github.com/gitscrum/posthtml-cache/issues/5)
+* build: update changelog ([2c10919](https://github.com/gitscrum/posthtml-cache/commit/2c10919))
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2017-12-12)
 
