@@ -50,7 +50,7 @@ test('should add nanoid to iframe links', async t => {
 test('should add nanoid to custome attribute', async t => {
     const input = '<img data-src="lorem.png" />';
     const html = (await processing(input, {tags: ['iframe'], attributes: ['data-src']})).html;
-    console.log(html);
+
     const id = queryString.parse(parser(html)[0].attrs['data-src'].split('?')[1]).v;
     t.truthy(id);
     t.is(id.length, 21);
