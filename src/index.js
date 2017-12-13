@@ -48,7 +48,7 @@ export default (options = {}) => {
                     }
 
                     return attributeList;
-                }, {});
+                }, node.attrs);
             }
 
             return node;
