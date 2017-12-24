@@ -8,12 +8,12 @@ const setNanoid = url => {
     const fullUrl = /^[/?]/.test(url) ? `foo.bar${url}` : url;
 
     if (!isUrl(normalizeUrl(fullUrl))) {
-        return;
+        return url;
     }
 
     let [uri, query] = fullUrl.split('?');
     query = queryString.parse(query);
-    query = query.v ? query.v = id : Object.assign(query, {v: id});
+    query.v = query.v ? query.v : id;
     query = queryString.stringify(query);
 
     return `${uri}?${query}`;
