@@ -1,3 +1,15 @@
+<a name="0.1.2"></a>
+## 0.1.2 (2017-12-24)
+
+* 0.1.2 ([05d52fe](https://github.com/gitscrum/posthtml-cache/commit/05d52fe))
+* perf: set nano id ([88c4a99](https://github.com/gitscrum/posthtml-cache/commit/88c4a99))
+* fix: attribute disappears ([0202774](https://github.com/gitscrum/posthtml-cache/commit/0202774))
+* fix: return value if not url ([67a3b30](https://github.com/gitscrum/posthtml-cache/commit/67a3b30))
+* test: for relative path and not path ([7680e3a](https://github.com/gitscrum/posthtml-cache/commit/7680e3a))
+* build: update changelog ([51a5387](https://github.com/gitscrum/posthtml-cache/commit/51a5387))
+
+
+
 <a name="0.1.1"></a>
 ## 0.1.1 (2017-12-13)
 
