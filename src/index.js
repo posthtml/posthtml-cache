@@ -8,7 +8,7 @@ const setNanoid = url => {
     const fullUrl = /^[/?]/.test(url) ? `foo.bar${url}` : url;
 
     if (!isUrl(normalizeUrl(fullUrl))) {
-        return;
+        return url;
     }
 
     let [uri, query] = fullUrl.split('?');
