@@ -49,7 +49,7 @@ test('should add nanoid to iframe links', async t => {
 
 test('should add nanoid to custome attribute', async t => {
     const input = '<img data-src="lorem.png" alt="attribute not removed"/>';
-    const html = (await processing(input, {tags: ['iframe'], attributes: ['data-src']})).html;
+    const html = (await processing(input, {tags: ['img'], attributes: ['data-src']})).html;
 
     const id = queryString.parse(parser(html)[0].attrs['data-src'].split('?')[1]).v;
     const alt = parser(html)[0].attrs.alt;

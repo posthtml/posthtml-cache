@@ -43,7 +43,7 @@ export default (options = {}) => {
         tree.walk(node => {
             if (node.tag && node.attrs) {
                 node.attrs = Object.keys(node.attrs).reduce((attributeList, attr) => {
-                    if (tags.includes(node.tag) || attributes.includes(attr)) {
+                    if (tags.includes(node.tag) && attributes.includes(attr)) {
                         return Object.assign(attributeList, {[attr]: setNanoid(node.attrs[attr])});
                     }
 
