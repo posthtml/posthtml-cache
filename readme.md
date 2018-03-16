@@ -67,10 +67,10 @@ output.html
 
 ### `tags`
 Type: `Array`  
-Default: `['script', 'link']`
+Default: `['script', 'link']`  
 Description: *You can also expand the list by adding the tags you need...*  
 
 ### `attributes`
 Type: `Array`  
-Default: `['src', 'href']`
+Default: `['src', 'href']` 
 Description: *You can also expand the list by adding the attributes you need...*  
