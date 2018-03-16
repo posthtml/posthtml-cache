@@ -48,6 +48,17 @@ test('should add nanoid to iframe links', async t => {
     t.is(id.length, 21);
 });
 
+test('should exclude tag links', async t => {
+    const input = '<iframe src="index.html"></iframe><link rel="stylesheet" href="style.css">';
+    const html = (await processing(input, {tags: ['iframe'], exclude: ['link']})).html;
+    const [iframe, link] = parser(html);
+    const iframeID = queryString.parse(iframe.attrs.src.split('?')[1]).v;
+    const linkID = queryString.parse(link.attrs.href.split('?')[1]).v;
+    t.truthy(iframeID);
+    t.falsy(linkID);
+    t.is(iframeID.length, 21);
+});
+
 test('should not remove other attributes', async t => {
     const input = '<link rel="stylesheet" href="style.css">';
     const html = (await processing(input)).html;

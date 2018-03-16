@@ -28,6 +28,10 @@ export default (options = {}) => {
             tags = [...new Set([...tags, ...options.tags])];
         }
 
+        if (options.exclude) {
+            tags = tags.filter(tag => !options.exclude.includes(tag));
+        }
+
         if (options.attributes && Array.isArray(options.attributes)) {
             attributes = [...new Set([...attributes, ...options.attributes])];
         }
