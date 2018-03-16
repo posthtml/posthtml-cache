@@ -1,3 +1,11 @@
+<a name="0.2.1"></a>
+## <small>0.2.1 (2018-03-16)</small>
+
+* 0.2.1 ([d10dea1](https://github.com/gitscrum/posthtml-cache/commit/d10dea1))
+* build: update changelog ([b803592](https://github.com/gitscrum/posthtml-cache/commit/b803592))
+
+
+
 <a name="0.2.0"></a>
 ## 0.2.0 (2018-03-16)
 
