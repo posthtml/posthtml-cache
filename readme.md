@@ -74,3 +74,8 @@ Description: *You can also expand the list by adding the tags you need...*
 Type: `Array`  
 Default: `['src', 'href']` 
 Description: *You can also expand the list by adding the attributes you need...*  
+
+### `exclude`
+Type: `Array`  
+Default: `[]`  
+Description: *You can also exclude the list by adding the tags you need...*  
