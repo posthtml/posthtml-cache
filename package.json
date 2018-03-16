@@ -39,7 +39,7 @@
     "is-url": "^1.2.2",
     "nanoid": "^1.0.2",
     "normalize-url": "^2.0.1",
-    "query-string": "^6.0.0"
+    "query-string": "^5.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.1.3",
