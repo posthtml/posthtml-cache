@@ -1,5 +1,21 @@
+<a name="0.2.0"></a>
+## 0.2.0 (2018-03-16)
+
+* 0.2.0 ([bf1afaa](https://github.com/gitscrum/posthtml-cache/commit/bf1afaa))
+* fix: for old node not support new version query-string ([1ca52b9](https://github.com/gitscrum/posthtml-cache/commit/1ca52b9))
+* build: add eslint plugin dependencies ([d681c0f](https://github.com/gitscrum/posthtml-cache/commit/d681c0f))
+* build: add eslint xo space ([49ed271](https://github.com/gitscrum/posthtml-cache/commit/49ed271))
+* build: update changelog ([3ce4287](https://github.com/gitscrum/posthtml-cache/commit/3ce4287))
+* build: update depDev ([d51987c](https://github.com/gitscrum/posthtml-cache/commit/d51987c))
+* docs: add description for option exclude ([d4f1cb9](https://github.com/gitscrum/posthtml-cache/commit/d4f1cb9))
+* docs: fix description for options, close #11 ([3077481](https://github.com/gitscrum/posthtml-cache/commit/3077481)), closes [#11](https://github.com/gitscrum/posthtml-cache/issues/11)
+* feat: options exclude, close #10 ([73428fa](https://github.com/gitscrum/posthtml-cache/commit/73428fa)), closes [#10](https://github.com/gitscrum/posthtml-cache/issues/10)
+* test: for #10 ([a4b4e07](https://github.com/gitscrum/posthtml-cache/commit/a4b4e07)), closes [#10](https://github.com/gitscrum/posthtml-cache/issues/10)
+
+
+
 <a name="0.1.2"></a>
-## 0.1.2 (2017-12-24)
+## <small>0.1.2 (2017-12-24)</small>
 
 * 0.1.2 ([05d52fe](https://github.com/gitscrum/posthtml-cache/commit/05d52fe))
 * perf: set nano id ([88c4a99](https://github.com/gitscrum/posthtml-cache/commit/88c4a99))
@@ -11,7 +27,7 @@
 
 
 <a name="0.1.1"></a>
-## 0.1.1 (2017-12-13)
+## <small>0.1.1 (2017-12-13)</small>
 
 * 0.1.1 ([149aea2](https://github.com/gitscrum/posthtml-cache/commit/149aea2))
 * Update license ([7cc7618](https://github.com/gitscrum/posthtml-cache/commit/7cc7618))
@@ -25,7 +41,7 @@
 
 
 <a name="0.1.0"></a>
-# 0.1.0 (2017-12-12)
+## 0.1.0 (2017-12-12)
 
 * 0.1.0 ([d24c00c](https://github.com/gitscrum/posthtml-cache/commit/d24c00c))
 * Update readme.md ([a69aaec](https://github.com/gitscrum/posthtml-cache/commit/a69aaec))
@@ -41,7 +57,7 @@
 
 
 <a name="0.0.1"></a>
-## 0.0.1 (2017-12-11)
+## <small>0.0.1 (2017-12-11)</small>
 
 * 0.0.1 ([5b70671](https://github.com/gitscrum/posthtml-cache/commit/5b70671))
 * style: change tab to space ([ba80466](https://github.com/gitscrum/posthtml-cache/commit/ba80466))
