@@ -12,7 +12,7 @@
 npm i -S posthtml posthtml-cache
 ```
 
-> **Note:** This project is compatible with node v4+
+> **Note:** This project is compatible with node v6+
 
 ## Usage
 
@@ -24,11 +24,11 @@ import posthtmlCache from 'posthtml-cache';
 const html = readFileSync('input.html', 'utf8');
 
 posthtml()
-    .use(posthtmlCache(/* options */))
-    .process(html)
-    .then(result => {
-        writeFileSync('output.html', result.html);
-    });
+  .use(posthtmlCache(/* options */))
+  .process(html)
+  .then(result => {
+    writeFileSync('output.html', result.html);
+  });
 
 ```
 
