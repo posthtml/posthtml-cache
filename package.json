@@ -3,9 +3,9 @@
   "version": "0.2.0",
   "description": "A posthtml plugin for add nanoid to style & script links",
   "license": "MIT",
-  "repository": "gitscrum/posthtml-cache",
-  "homepage": "gitscrum/posthtml-cache/#readme",
-  "bugs": "gitscrum/posthtml-cache/issues",
+  "repository": "posthtml/posthtml-cache",
+  "homepage": "posthtml/posthtml-cache/#readme",
+  "bugs": "posthtml/posthtml-cache/issues",
   "author": {
     "name": "Ivan Demidov",
     "email": "Scrum@list.ru",
