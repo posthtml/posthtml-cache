@@ -62,7 +62,7 @@
     "eslint-plugin-babel": "^5.1.0",
     "eslint-plugin-dependencies": "^2.4.0",
     "eslint-plugin-html": "^4.0.5",
-    "eslint-plugin-markdown": "^1.0.0-beta.7",
+    "eslint-plugin-markdown": "^1.0.0-beta.8",
     "eslint-plugin-unicorn": "^5.0.0",
     "husky": "^0.14.3",
     "is-promise": "^2.1.0",
