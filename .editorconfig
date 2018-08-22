@@ -14,5 +14,8 @@ indent_size = 2
 [*.html]
 insert_final_newline = false
 
+[changelog.md]
+insert_final_newline = false
+
 [*.md]
 trim_trailing_whitespace = false
