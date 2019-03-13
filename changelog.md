@@ -1,7 +1,18 @@
+## <small>0.2.2 (2019-03-13)</small>
+
+* build: bundle ([33c6168](https://github.com/posthtml/posthtml-cache/commit/33c6168))
+* build: update depDev ([2b54fe9](https://github.com/posthtml/posthtml-cache/commit/2b54fe9))
+* test: update according new ver avajs, close #14 ([4b923a9](https://github.com/posthtml/posthtml-cache/commit/4b923a9)), closes [#14](https://github.com/posthtml/posthtml-cache/issues/14)
+* docs: fix path to dep ([7103c36](https://github.com/posthtml/posthtml-cache/commit/7103c36))
+
+
+
 ## <small>0.2.1 (2018-08-22)</small>
 
+* 0.2.1 ([2c7a328](https://github.com/posthtml/posthtml-cache/commit/2c7a328))
 * build: drop support old node ([0d0a358](https://github.com/posthtml/posthtml-cache/commit/0d0a358))
 * build: perf for husky ([92f13c0](https://github.com/posthtml/posthtml-cache/commit/92f13c0))
+* build: update changelog ([bb69e0a](https://github.com/posthtml/posthtml-cache/commit/bb69e0a))
 * build: update changelog ([b803592](https://github.com/posthtml/posthtml-cache/commit/b803592))
 * build: update depDev ([6b292a6](https://github.com/posthtml/posthtml-cache/commit/6b292a6))
 * build: update lock file ([5af10fc](https://github.com/posthtml/posthtml-cache/commit/5af10fc))
