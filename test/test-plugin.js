@@ -28,24 +28,30 @@ test('should return promise', t => {
 test('should add nanoid to style links', async t => {
   const input = '<link rel="stylesheet" href="style.css">';
   const html = (await processing(input)).html;
-  const id = queryString.parse(parser(html)[0].attrs.href.split('?')[1]).v;
+
+  const {url, id} = getParts(html, 'href');
   t.truthy(id);
+  t.is(url, 'style.css');
   t.is(id.length, 21);
 });
 
 test('should add nanoid to script links', async t => {
   const input = '<script src="script.js"></script>';
   const html = (await processing(input)).html;
-  const id = queryString.parse(parser(html)[0].attrs.src.split('?')[1]).v;
+
+  const {url, id} = getParts(html, 'src');
   t.truthy(id);
+  t.is(url, 'script.js');
   t.is(id.length, 21);
 });
 
 test('should add nanoid to iframe links', async t => {
   const input = '<iframe src="index.html"></iframe>';
   const html = (await processing(input, {tags: ['iframe']})).html;
-  const id = queryString.parse(parser(html)[0].attrs.src.split('?')[1]).v;
+
+  const {url, id} = getParts(html, 'src');
   t.truthy(id);
+  t.is(url, 'index.html');
   t.is(id.length, 21);
 });
 
@@ -64,11 +70,12 @@ test('should not remove other attributes', async t => {
   const input = '<link rel="stylesheet" href="style.css">';
   const html = (await processing(input)).html;
 
-  const id = queryString.parse(parser(html)[0].attrs.href.split('?')[1]).v;
+  const {url, id} = getParts(html, 'href');
   const rel = parser(html)[0].attrs.rel;
   t.truthy(id);
   t.truthy(rel);
   t.is(rel, 'stylesheet');
+  t.is(url, 'style.css');
   t.is(id.length, 21);
 });
 
@@ -77,11 +84,12 @@ test('should not add nano id', async t => {
   const input = `<link rel="stylesheet" href="style.css?v=${staticID}">`;
   const html = (await processing(input)).html;
 
-  const id = queryString.parse(parser(html)[0].attrs.href.split('?')[1]).v;
+  const {url, id} = getParts(html, 'href');
   const rel = parser(html)[0].attrs.rel;
   t.truthy(id);
   t.truthy(rel);
   t.is(rel, 'stylesheet');
+  t.is(url, 'style.css');
   t.is(id, staticID);
   t.is(id.length, 21);
 });
@@ -91,11 +99,12 @@ test('should add nano id for relative path', async t => {
   const input = `<link rel="stylesheet" href="/?v=${staticID}">`;
   const html = (await processing(input)).html;
 
-  const id = queryString.parse(parser(html)[0].attrs.href.split('?')[1]).v;
+  const {url, id} = getParts(html, 'href');
   const rel = parser(html)[0].attrs.rel;
   t.truthy(id);
   t.truthy(rel);
   t.is(rel, 'stylesheet');
+  t.is(url, '/');
   t.is(id, staticID);
   t.is(id.length, 21);
 });
@@ -108,3 +117,23 @@ test('should not add nano id for not url', async t => {
   t.truthy(href);
   t.is(href, 'sadsadsadsda');
 });
+
+test('should add nano id for root path', async t => {
+  const input = '<link rel="stylesheet" href="/style.css">';
+  const html = (await processing(input)).html;
+
+  const {url, id} = getParts(html, 'href');
+  const rel = parser(html)[0].attrs.rel;
+  t.truthy(id);
+  t.truthy(rel);
+  t.is(rel, 'stylesheet');
+  t.is(url, '/style.css');
+  t.is(id.length, 21);
+});
+
+function getParts(html, attributeName) {
+  const parts = parser(html)[0].attrs[attributeName].split('?');
+  const url = parts[0];
+  const id = queryString.parse(parts[1]).v;
+  return {url, id};
+}

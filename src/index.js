@@ -11,7 +11,7 @@ const setNanoid = url => {
     return url;
   }
 
-  let [uri, query] = fullUrl.split('?');
+  let [uri, query] = url.split('?');
   query = queryString.parse(query);
   query.v = query.v ? query.v : id;
   query = queryString.stringify(query);
