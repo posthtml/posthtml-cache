@@ -1,4 +1,4 @@
-import nanoid from 'nanoid';
+import {nanoid} from 'nanoid';
 import isUrl from 'is-url';
 import queryString from 'query-string';
 import normalizeUrl from 'normalize-url';
