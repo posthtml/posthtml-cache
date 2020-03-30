@@ -3,7 +3,7 @@ import posthtml from 'posthtml';
 import parser from 'posthtml-parser';
 import isPromise from 'is-promise';
 import queryString from 'query-string';
-import nanoid from 'nanoid';
+import {nanoid} from 'nanoid';
 import plugin from '../src';
 
 function processing(html, options) {

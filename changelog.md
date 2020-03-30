@@ -1,6 +1,23 @@
+## <small>0.2.3 (2020-03-30)</small>
+
+* ci: drop support old node ([eb7213a](https://github.com/posthtml/posthtml-cache/commit/eb7213a))
+* fix: after update dep ([65b68ae](https://github.com/posthtml/posthtml-cache/commit/65b68ae))
+* fix: don't change root URLs ([29b0a7f](https://github.com/posthtml/posthtml-cache/commit/29b0a7f))
+* build: update dep dev ([ce20fdb](https://github.com/posthtml/posthtml-cache/commit/ce20fdb))
+* build(deps): bump acorn from 5.7.1 to 5.7.4 ([7ae88df](https://github.com/posthtml/posthtml-cache/commit/7ae88df))
+* build(deps): bump eslint-utils from 1.3.1 to 1.4.2 ([e007087](https://github.com/posthtml/posthtml-cache/commit/e007087))
+* build(deps): bump handlebars from 4.1.0 to 4.5.3 ([20982f6](https://github.com/posthtml/posthtml-cache/commit/20982f6))
+* build(deps): bump mixin-deep from 1.3.1 to 1.3.2 ([a72289a](https://github.com/posthtml/posthtml-cache/commit/a72289a))
+* style: formatted to eslint ([6b11255](https://github.com/posthtml/posthtml-cache/commit/6b11255))
+* docs: fix badge node support ([bc26be3](https://github.com/posthtml/posthtml-cache/commit/bc26be3))
+
+
+
 ## <small>0.2.2 (2019-03-13)</small>
 
+* 0.2.2 ([b10f947](https://github.com/posthtml/posthtml-cache/commit/b10f947))
 * build: bundle ([33c6168](https://github.com/posthtml/posthtml-cache/commit/33c6168))
+* build: update changelog ([ef4c541](https://github.com/posthtml/posthtml-cache/commit/ef4c541))
 * build: update depDev ([2b54fe9](https://github.com/posthtml/posthtml-cache/commit/2b54fe9))
 * test: update according new ver avajs, close #14 ([4b923a9](https://github.com/posthtml/posthtml-cache/commit/4b923a9)), closes [#14](https://github.com/posthtml/posthtml-cache/issues/14)
 * docs: fix path to dep ([7103c36](https://github.com/posthtml/posthtml-cache/commit/7103c36))
