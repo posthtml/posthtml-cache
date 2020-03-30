@@ -13,7 +13,7 @@
   },
   "main": "lib/index.js",
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   },
   "scripts": {
     "version": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
@@ -95,7 +95,7 @@
         "@babel/preset-env",
         {
           "targets": {
-            "node": 6
+            "node": 10
           }
         }
       ],

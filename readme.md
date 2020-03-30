@@ -12,7 +12,7 @@
 npm i -S posthtml posthtml-cache
 ```
 
-> **Note:** This project is compatible with node v6+
+> **Note:** This project is compatible with node v10+
 
 ## Usage
 
