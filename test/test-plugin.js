@@ -131,6 +131,69 @@ test('should add nano id for root path', async t => {
   t.is(id.length, 21);
 });
 
+test('should add nano id for external link', async t => {
+  const input = '<link rel="stylesheet" href="https://foo.com/style.css">';
+  const html = (await processing(input)).html;
+
+  const {url, id} = getParts(html, 'href');
+  const rel = parser(html)[0].attrs.rel;
+  t.truthy(id);
+  t.truthy(rel);
+  t.is(rel, 'stylesheet');
+  t.is(url, 'https://foo.com/style.css');
+  t.is(id.length, 21);
+});
+
+test('should add nano id for allowed external link', async t => {
+  const input = '<link rel="stylesheet" href="https://FOO.com/style.css">';
+  const html = (await processing(input, {onlyInternal: ['https://foo.com/']})).html;
+
+  const {url, id} = getParts(html, 'href');
+  const rel = parser(html)[0].attrs.rel;
+  t.truthy(id);
+  t.truthy(rel);
+  t.is(rel, 'stylesheet');
+  t.is(url, 'https://FOO.com/style.css');
+  t.is(id.length, 21);
+});
+
+test('shouldn\'t add nano id for disallowed external link', async t => {
+  const input = '<link rel="stylesheet" href="https://foo.com/style.css">';
+  const html = (await processing(input, {onlyInternal: ['http://foo.com/']})).html;
+
+  const {url, id} = getParts(html, 'href');
+  const rel = parser(html)[0].attrs.rel;
+  t.falsy(id);
+  t.truthy(rel);
+  t.is(rel, 'stylesheet');
+  t.is(url, 'https://foo.com/style.css');
+});
+
+test('should add nano id for disallowed protocol-less external link', async t => {
+  const input = '<link rel="stylesheet" href="//FOO.com/style.css">';
+  const html = (await processing(input, {onlyInternal: ['//foo.com/']})).html;
+
+  const {url, id} = getParts(html, 'href');
+  const rel = parser(html)[0].attrs.rel;
+  t.truthy(id);
+  t.truthy(rel);
+  t.is(rel, 'stylesheet');
+  t.is(url, '//FOO.com/style.css');
+  t.is(id.length, 21);
+});
+
+test('shouldn\'t add nano id for disallowed protocol-less external link', async t => {
+  const input = '<link rel="stylesheet" href="//foo.com/style.css">';
+  const html = (await processing(input, {onlyInternal: ['//foo.org/']})).html;
+
+  const {url, id} = getParts(html, 'href');
+  const rel = parser(html)[0].attrs.rel;
+  t.falsy(id);
+  t.truthy(rel);
+  t.is(rel, 'stylesheet');
+  t.is(url, '//foo.com/style.css');
+});
+
 function getParts(html, attributeName) {
   const parts = parser(html)[0].attrs[attributeName].split('?');
   const url = parts[0];

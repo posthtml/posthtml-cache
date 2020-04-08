@@ -66,16 +66,21 @@ output.html
 ## Options
 
 ### `tags`
-Type: `Array`  
-Default: `['script', 'link']`  
-Description: *You can also expand the list by adding the tags you need...*  
+Type: `Array`
+Default: `['script', 'link']`
+Description: *You can also expand the list by adding the tags you need...*
 
 ### `attributes`
-Type: `Array`  
-Default: `['src', 'href']` 
-Description: *You can also expand the list by adding the attributes you need...*  
+Type: `Array`
+Default: `['src', 'href']`
+Description: *You can also expand the list by adding the attributes you need...*
 
 ### `exclude`
-Type: `Array`  
-Default: `[]`  
-Description: *You can also exclude the list by adding the tags you need...*  
+Type: `Array`
+Default: `[]`
+Description: *You can also exclude the list by adding the tags you need...*
+
+### `onlyInternal`
+Type: `Array`
+Default: `[]`
+Description: *If you have external URL-s, some won't work if you add nanoid to them. If this list is empty, all external links are modified. Otherwise, only the URL-s starting with items in the array (case insensitive) will be modified. E.g. `['https://github.com/']` will add nanoid to all local links and only to `https://github.com/*`. It won't add nanoid to e.g. `http://github.com` or  `https://fonts.google.com`. For simplicity, a link is considered external if it starts with a protocol (see [is-absolute-url](https://www.npmjs.com/package/is-absolute-url)) or with double slash `//`.*

@@ -34,6 +34,7 @@
     "style"
   ],
   "dependencies": {
+    "is-absolute-url": "^3.0.3",
     "is-url": "^1.2.4",
     "nanoid": "^3.0.2",
     "normalize-url": "5.0.0",
